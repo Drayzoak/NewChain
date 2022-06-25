@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FCIUyY+jPRarKVdkoBfUEjlrwIUmOSWGfAz3w4L0+pjIheZQ0OA2tKQLQIRwdOFDl5hvZMbZ3gE+2vFG6XVhzQ==",
+  "success": true,
+  "projectFilePath": "E:\\NewChain\\NewChain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\websocketsharp-netstandard\\1.0.1\\websocketsharp-netstandard.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
