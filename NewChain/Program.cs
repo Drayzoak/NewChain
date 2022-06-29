@@ -4,7 +4,7 @@ class Program
     public static int Port;
     private static P2PServer _server;
     private static readonly P2PClient Client = new P2PClient();
-    public static Blockchain PhillyCoin = new Blockchain();
+    public static Blockchain NewChain = new Blockchain();
     private static string _name = "Unknown";
     static void Main(string[] args)
     {
@@ -49,19 +49,19 @@ class Program
                     string receiverName = Console.ReadLine();
                     Console.WriteLine("Please enter the amount");
                     string amount = Console.ReadLine();
-                    PhillyCoin.CreateTransaction(new Transaction(_name, receiverName, int.Parse(amount)));
-                    Client.Broadcast(JsonConvert.SerializeObject(PhillyCoin));
+                    NewChain.CreateTransaction(new Transaction(_name, receiverName, int.Parse(amount)));
+                    Client.Broadcast(JsonConvert.SerializeObject(NewChain));
                     break;
                 case 3:
                     Console.WriteLine("Blockchain");
-                    Console.WriteLine(JsonConvert.SerializeObject(PhillyCoin, Formatting.Indented));
+                    Console.WriteLine(JsonConvert.SerializeObject(NewChain, Formatting.Indented));
                     break;
                 case 4:
-                    PhillyCoin.ProcessPendingTransactions(_name);
+                    NewChain.ProcessPendingTransactions(_name);
                     break;
                 case 5:
                     string Balanceof = Console.ReadLine();
-                    Console.WriteLine(PhillyCoin.GetBalance(Balanceof));
+                    Console.WriteLine(NewChain.GetBalance(Balanceof));
                     break;
             }
 
